@@ -1,0 +1,67 @@
+p,
+dd,
+dl,
+figure,
+blockquote {
+    margin: 0;
+}
+
+
+/* Совутую не забывать о списке определений <dl>. Семантика это хорошо.
+Для более удобного использования можно позьзоваться дивом (валидно):
+dl>div*3>dd{value}+dt{prop} */
+
+blockquote,
+q {
+    quotes: none;
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th {
+    font-weight: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+audio,
+video {
+    display: block;
+}
+
+img {
+    display: block;
+    border: none;
+    /*max-width: 100%;*/
+}
+
+iframe {
+    border: none;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: inherit;
+}

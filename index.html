@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+
+  <body>
+    <section class="main">
+      <div class="wrapper">
+        <span class="title">Password Generator</span>
+        <div class="display">
+          <span id="title-password"></span>
+          <img
+            class="svg-cop-pwd"
+            id="svg-cop-pwd"
+            src="./src/images/files.svg"
+            alt="files"
+          />
+        </div>
+        <div class="settings">
+          <div class="pwd_length">
+            <div class="pwd_length-tittle">
+              <span>Character Length</span>
+              <span id="password-length">0</span>
+            </div>
+            <div class="settings_range">
+              <input
+                type="range"
+                id="range"
+                name="range"
+                min="0"
+                max="15"
+                value="0"
+              />
+            </div>
+
+            <div class="options">
+              <div class="options_chbx">
+                <label class="toggler-wrapper option-checkbox">
+                  <input
+                    type="checkbox"
+                    name="upperCaseLetters"
+                    id="upperCaseLetters"
+                  />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div class="badge">Include Uppercase Letters</div>
+              </div>
+              <div class="options_chbx">
+                <label class="toggler-wrapper option-checkbox">
+                  <input
+                    type="checkbox"
+                    name="lowerCaseLetters"
+                    id="lowerCaseLetters"
+                  />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div class="badge">Include Lowercase Letters</div>
+              </div>
+              <div class="options_chbx">
+                <label class="toggler-wrapper option-checkbox">
+                  <input type="checkbox" name="numbers" id="numbers" />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div class="badge">Include Numbers</div>
+              </div>
+              <div class="options_chbx">
+                <label class="toggler-wrapper option-checkbox">
+                  <input type="checkbox" name="symbols" id="symbols" />
+                  <div class="toggler-slider">
+                    <div class="toggler-knob"></div>
+                  </div>
+                </label>
+                <div class="badge">Include Symbols</div>
+              </div>
+            </div>
+          </div>
+          <div class="strength">
+            <span>STRENGTH</span>
+            <div class="strength-level">
+              <ul class="display-strength">
+                <li>
+                  <div id="level"></div>
+                </li>
+                <li>
+                  <div id="level"></div>
+                </li>
+                <li>
+                  <div id="level"></div>
+                </li>
+                <li>
+                  <div id="level"></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <input
+            type="button"
+            class="btn-generate"
+            id="btn-generate"
+            value="Generate"
+            name="generate"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="./src/js/index.js"></script>
+</html>
